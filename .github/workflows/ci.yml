@@ -27,5 +27,8 @@ jobs:
             - name: "List files in the project directory"
               run: ls -la
             
-              
+            - name: "Run Linting"
+              run: npm run lint
+
+            
 
