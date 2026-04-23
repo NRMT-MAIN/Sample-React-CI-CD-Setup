@@ -1,8 +1,9 @@
 name: "Sample React CI Pipeline"
 
-on: 
+on:
     push:
         branches: [ main , master ]
+
 
 jobs:
     build-and-test:
@@ -16,4 +17,7 @@ jobs:
 
             - name: "Check node version"
               run: node -v
-              
+
+            - name: "Clone the repository"
+              uses: actions/checkout@v3
+            
